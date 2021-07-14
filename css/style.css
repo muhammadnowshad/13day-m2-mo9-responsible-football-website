@@ -5,8 +5,8 @@ body{
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    width: 1349px;
     columns: #6C6C6C;
+    overflow-x: hidden;
 }
 h1{
     font-size: 64px;
@@ -44,7 +44,7 @@ h6{
 /* ---------- header style -------- */
 .header-container{
     background-color: #2D25A0;
-    
+    width: 1349px;
     height: 677px;
     display: flex;
     justify-content: space-between;
@@ -194,3 +194,164 @@ footer{
     margin-top: 20px;
     margin-bottom: 0;
 }
+
+
+/* ---------------------------------------------
+              Mobile Devices 
+-----------------------------------------------*/
+@media only screen and (max-width: 668px) {
+    header{
+        background-color: #2D25A0;
+    }
+    .header-container{
+        background-color #2D25A0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding 5%;
+    }
+    .top-heading h1{
+        color: white;
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .link-button span{
+        padding-right: 15px;
+    }
+    .top-banner img{
+        width: 330px;
+        height: 260px;
+    }
+    header:hover .top-banner{
+        transform: rotate(360deg);
+        transition: transform 2s ease-in-out;
+    }
+
+    /* -------------- players style---------------  */
+.players{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    padding: 20px;
+    align-items: center;
+}
+.player{
+    width: 300px;
+    height: 450px;
+    padding: 15px;
+    box-shadow: 20px 0px 20px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgb(240, 240, 240);
+}
+.player-image img{
+    width: 100%;
+    height: 256px;
+    background-position: center;
+}
+.player-name{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.player-info p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* highlight section styles  */
+.highlight-section{
+    display: flex;
+    flex-direction: column;
+}
+.highlight-info{
+
+}
+
+.highlight-info h2{
+
+}
+.highlight-info p{
+    
+}
+.highlight-image img{
+    width:330px;
+    height: 250px;
+}
+
+/* score section styles  */
+.score-section{
+    /* padding: 50px 140px 140px 140px; */
+}
+.score{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 20px 20px 30px gainsboro;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+/* -------------- time section styles ----------- */
+.time-section{
+    /* padding: 100px 140px 140px 140px; */
+    background-color: #2D25A0;
+    color: white;
+}
+.time-schedule{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.time-title{
+    text-align: center;
+}
+.time h1{
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+/* footer section styles  */
+footer{
+    display: flex;
+    justify-content: center;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 485px;
+    height: 215px;
+    padding-bottom: 60px;
+    padding-top: 100px;
+}
+.footer-image img{
+    width: 95%;
+    height: 110px;
+}
+.social-icon{
+    margin-top: 20px;
+}
+.icon{
+    color: #969BAB;
+    background-color: #E7E7E8;
+    padding: 8px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.icon:hover {
+    background-color: #E02C6D;
+    color: white;
+}
+.footer-container h6{
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+
+    
+
+}
+
