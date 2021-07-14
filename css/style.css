@@ -38,7 +38,6 @@ h6{
 .link-button:hover{
     color: #E02C6D;
     background-color: white;
-    border: 1px solid #2D25A0;
 }
 
 
@@ -75,7 +74,7 @@ header:hover .top-banner{
 }
 
 
-/* players style  */
+/* -------------- players style---------------  */
 .players{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -107,7 +106,7 @@ header:hover .top-banner{
 /* highlight section styles  */
 .highlight-section{
     display: flex;
-    padding: 0 140px 140px 140px;
+    padding: 0 140px 100px 140px;
 }
 .highlight-info{
     padding-right: 50px;
@@ -125,6 +124,25 @@ header:hover .top-banner{
     height: 425px;
 }
 
+/* -------------- time section styles ----------- */
+.time-section{
+    padding: 100px 140px 140px 140px;
+    background-color: #2D25A0;
+    color: white;
+}
+.time-schedule{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.time-title{
+    text-align: center;
+}
+.time h1{
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
 /* footer section styles  */
 footer{
     display: flex;
@@ -138,6 +156,7 @@ footer{
     width: 485px;
     height: 215px;
     padding-bottom: 60px;
+    padding-top: 100px;
 }
 .footer-image img{
     width: 95%;
