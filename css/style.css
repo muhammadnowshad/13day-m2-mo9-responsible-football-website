@@ -199,21 +199,14 @@ footer{
 /* ---------------------------------------------
               Mobile Devices 
 -----------------------------------------------*/
-@media only screen and (max-width: 668px) {
-    header{
-        background-color: #2D25A0;
-        width: 668px;
-    }
-    .container{
-        justify-content: center; 
-        width: 668px;
-    }
+@media only screen and (max-width: 500px) {
+
     .header-container{
         grid-template-columns: repeat(1,1fr);
         padding: 5%;
-        width: 668px;
+        width: 500px;
+        background-color: #2D25A0;
         display: flex; 
-        
         flex-direction: column;
     }
     .top-heading,.top-banner{
