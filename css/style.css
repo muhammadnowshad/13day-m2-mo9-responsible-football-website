@@ -6,11 +6,17 @@ body{
     font-size: 16px;
     font-weight: 400;
     width: 1349px;
+    columns: #6C6C6C;
 }
 h1{
     font-size: 64px;
     font-weight: 700;
     line-height: 80px;
+}
+h2{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
 }
 h3{
     font-size: 28px;
@@ -96,6 +102,27 @@ header:hover .top-banner{
 .player-info p{
     margin-top: 0;
     margin-bottom: 0;
+}
+
+/* highlight section styles  */
+.highlight-section{
+    display: flex;
+    padding: 0 140px 140px 140px;
+}
+.highlight-info{
+    padding-right: 50px;
+}
+.highlight-info h2{
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+.highlight-info p{
+    margin-bottom: 35px;
+    padding-right: 90px;
+}
+.highlight-image img{
+    width:540px;
+    height: 425px;
 }
 
 /* footer section styles  */
