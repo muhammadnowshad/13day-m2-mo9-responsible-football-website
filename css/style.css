@@ -1,11 +1,13 @@
-/* common style  */
+
+/* -------------  common style ------------ */
+
 body{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    columns: #6C6C6C;
+    color: #6C6C6C;
     overflow-x: hidden;
 }
 h1{
@@ -41,7 +43,8 @@ h6{
 }
 
 
-/* ---------- header style -------- */
+/* -------------------- header style --------------- */
+
 .header-container{
     background-color: #2D25A0;
     width: 1349px;
@@ -75,6 +78,7 @@ header:hover .top-banner{
 
 
 /* -------------- players style---------------  */
+
 .players{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -103,7 +107,8 @@ header:hover .top-banner{
     margin-bottom: 0;
 }
 
-/* highlight section styles  */
+/*----------------- highlight section styles  --------------*/
+
 .highlight-section{
     display: flex;
     padding: 0 140px 100px 140px;
@@ -124,7 +129,9 @@ header:hover .top-banner{
     height: 425px;
 }
 
-/* score section styles  */
+
+/*================== score section styles  ===================*/
+
 .score-section{
     padding: 50px 140px 140px 140px;
 }
@@ -138,7 +145,9 @@ header:hover .top-banner{
     padding: 30px;
 }
 
+
 /* -------------- time section styles ----------- */
+
 .time-section{
     padding: 100px 140px 140px 140px;
     background-color: #2D25A0;
@@ -157,7 +166,9 @@ header:hover .top-banner{
     margin-bottom: -20px;
 }
 
-/* footer section styles  */
+
+/*================ footer section styles  ====================*/
+
 footer{
     display: flex;
     justify-content: center;
@@ -199,161 +210,210 @@ footer{
 /* ---------------------------------------------
               Mobile Devices 
 -----------------------------------------------*/
+
 @media only screen and (max-width: 500px) {
 
     .header-container{
         grid-template-columns: repeat(1,1fr);
-        padding: 5%;
         width: 100%;
         background-color: #2D25A0;
         display: flex; 
         flex-direction: column;
     }
-    .top-heading,.top-banner{
-        margin: 0;
-        padding: 0; 
-        justify-content: center;   
+    .top-heading{
+        padding: 0;
+        padding-top: 30px;
+        text-align: center;
     }
     .top-heading h1{
         color: white;
-        font-size: 36px;
-        line-height: 50px;
+        font-size: 45px;
+        line-height: 60px;
     }
-    .link-button span{
-        padding-right: 15px;
+    .link-button{
+        padding: 10px 24px;
+        text-decoration: none;
+        font-weight: 500;
+        color: white;
+        background-color:#E02C6D;
+        text-align: center;
+    }
+    .link-button:hover{
+        color: #E02C6D;
+        background-color: white;
+    }
+    .top-banner{
+        margin: 0;
+        padding: 70px 80px 80px 80px;
     }
     .top-banner img{
         width: 330px;
         height: 260px;
+        margin: 0;
+        padding: 0;
     }
-    header:hover .top-banner{
+    .header-container:hover .top-banner{
         transform: rotate(360deg);
         transition: transform 2s ease-in-out;
     }
 
+
     /* -------------- players style---------------  */
-.players{
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(1,1fr);
-    grid-row-gap: 30px;
-    grid-column-gap: 30px;
-    padding: 30px 10px 5px 80px;
-    align-items: center;
-}
-.player{
-    width: 300px;
-    height: 450px;
-    padding: 15px;
-    box-shadow: 20px 0px 20px rgba(0, 0, 0, 0.15);
-    border: 1px solid rgb(240, 240, 240);
-}
-.player-image img{
-    width: 100%;
-    height: 256px;
-    background-position: center;
-}
-.player-name{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.player-info p{
-    margin-top: 0;
-    margin-bottom: 0;
+
+    .players{   
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 30px;
+        grid-column-gap: 30px;
+        padding: 50px 10px 40px 80px;
+        align-items: center;
+    }
+    .player{
+        width: 300px;
+        height: 450px;
+        padding: 15px;
+        box-shadow: 20px 0px 20px rgba(0, 0, 0, 0.15);
+        border: 1px solid rgb(240, 240, 240);
+    }
+    .player-image img{
+        width: 100%;
+        height: 256px;
+        background-position: center;
+    }
+    .player-name{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .player-info p{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+
+    /*=============   highlight section styles  ==================*/
+
+    .highlight-section{
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: repeat(1,1fr);
+        margin: 0;
+        padding: 0;
+    }
+    .highlight-info{
+        text-align: center;
+        padding: 0;
+    }
+
+    .highlight-info h2{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .highlight-info p{
+        padding: 0 95px;
+        text-align: justify;    
+    }
+    .highlight-image{
+        padding: 50px 0px 0px 85px;
+        margin: 0;
+    }
+    .highlight-image img{
+        width:330px;
+        height: 250px;
+    }
+
+
+
+    /*================  score section styles  ===================*/
+
+    .score-section{
+        padding: 80px;
+    }
+    .score{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 20px 20px 30px gainsboro;
+        border: 1px solid whitesmoke;
+        border-radius: 10px;
+        padding: 30px;
+    }
+    .time-title{
+        font-size: 50px;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+
+    /* -------------- time section styles ----------- */
+
+    .time-section{
+        padding: 50px 25px 70px 25px;
+        background-color: #2D25A0;
+        color: white;
+    }
+    .time-schedule{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    .time-title{
+        text-align: center;
+        font-size: 50px;
+        padding: 0 25px;
+        line-height: 60px;
+    }
+    .time h3{
+        font-size: 25px;
+    }
+
+
+    /*==================  footer section styles  ================*/
+
+    footer{
+        display: flex;
+        justify-content: center;
+    }
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 215px;
+        padding-bottom: 60px;
+        padding-top: 70px;
+        text-align: center;
+    }
+    .footer-image img{
+        width: 60%;
+        height: 110px;
+    }
+    .social-icon{
+        margin-top: 20px;
+        text-align: center
+        ;
+    }
+    .icon{
+        color: #969BAB;
+        background-color: #E7E7E8;
+        padding: 8px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    .icon:hover {
+        background-color: #E02C6D;
+        color: white;
+    }
+    .footer-container h6{
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
 }
 
-/* highlight section styles  */
-.highlight-section{
-    display: flex;
-    flex-direction: column;
-}
-.highlight-info{
-
-}
-
-.highlight-info h2{
-
-}
-.highlight-info p{
-    
-}
-.highlight-image img{
-    width:330px;
-    height: 250px;
-}
-
-/* score section styles  */
-.score-section{
-    /* padding: 50px 140px 140px 140px; */
-}
-.score{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 20px 20px 30px gainsboro;
-    border: 1px solid whitesmoke;
-    border-radius: 10px;
-    padding: 30px;
-}
-
-/* -------------- time section styles ----------- */
-.time-section{
-    /* padding: 100px 140px 140px 140px; */
-    background-color: #2D25A0;
-    color: white;
-}
-.time-schedule{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-.time-title{
-    text-align: center;
-}
-.time h1{
-    margin-top: -20px;
-    margin-bottom: -20px;
-}
-
-/* footer section styles  */
-footer{
-    display: flex;
-    justify-content: center;
-}
-.footer-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 485px;
-    height: 215px;
-    padding-bottom: 60px;
-    padding-top: 100px;
-}
-.footer-image img{
-    width: 95%;
-    height: 110px;
-}
-.social-icon{
-    margin-top: 20px;
-}
-.icon{
-    color: #969BAB;
-    background-color: #E7E7E8;
-    padding: 8px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-.icon:hover {
-    background-color: #E02C6D;
-    color: white;
-}
-.footer-container h6{
-    margin-top: 20px;
-    margin-bottom: 0;
-}
-
-}
+/* =================   complete   ===============  */
 
