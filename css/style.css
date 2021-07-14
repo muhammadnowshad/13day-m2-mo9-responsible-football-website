@@ -202,14 +202,16 @@ footer{
 @media only screen and (max-width: 668px) {
     header{
         background-color: #2D25A0;
+        width: 668px;
     }
     .container{
-        width: 100%;
         justify-content: center; 
+        width: 668px;
     }
     .header-container{
         grid-template-columns: repeat(1,1fr);
         padding: 5%;
+        width: 668px;
         display: flex; 
         
         flex-direction: column;
